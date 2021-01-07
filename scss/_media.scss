@@ -1,0 +1,89 @@
+// HOME PAGE
+@media(max-width: 767px) {
+    #main-header { height: 112vh; }
+
+    // Nav Bar
+    #navbar, #secondary-navbar {
+        .container   {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img { margin-bottom: -0.75rem; }
+
+            ul li {
+                padding: 1rem !important;
+            }
+        }
+    }
+
+    .XL-heading { font-size: 3rem; }
+
+    // Section Layout
+    %section-layout {
+        .box-container {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    // Section: Achievements
+    #achievements { grid-template-columns: repeat(1, 1fr); }
+
+    // Footer
+    #main-footer {
+        .container {
+            flex-direction: column;
+            i {
+                margin-top: 1rem;
+                padding: .75rem;
+                margin-right: .5rem;
+                text-align: center;
+            }
+        }
+    }
+}
+
+// ABOUT PAGE
+
+// Small Screens
+@media(max-width: 768px) {
+    #testimonials {
+        .testimonial-container {
+            grid-template-columns: 1fr;
+            padding: 2rem;
+        }
+    }
+
+    #sponsors > .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .box-img {
+            width: 180px;
+            margin-bottom: 1rem;
+        }
+    }
+
+    #about {
+        .box-container {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+// CONTACT PAGE
+@media(max-width: 500px) {
+    #contact > .container > form {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+// WORK PAGE        
+@media(max-width: 767px) {
+    .card-container {
+        grid-template-columns: 1fr !important;
+    }
+}
